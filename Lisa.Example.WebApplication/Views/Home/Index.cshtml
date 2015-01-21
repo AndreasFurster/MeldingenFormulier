@@ -1,0 +1,37 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+<h1>Melding aanmaken</h1>
+<form>
+    <fieldset>
+        <label for="categorieInput">Categorie:</label><br />
+        <select id="categorieInput" name="categorie">
+            <option value="0" selected disabled>Selecteer een categorie</option>
+            <option value="1">EHBO</option>
+            <option value="2">Diefstal</option>
+            <option value="3">Geweld</option>
+            <option value="4">Overige</option>
+        </select><br />
+
+        <label for="locatieInput">Locatie:</label><br />
+        <select id="locatieInput" name="locatie">
+            <option value="0" selected disabled>Selecteer een locatie</option>
+            <option value="1">Some</option>
+            <option value="2">Location</option>
+            <option value="3">To</option>
+            <option value="4">Select</option>
+        </select><br />
+
+        <label for="Omschrijving">Omschrijving:</label><br />
+        <textarea id="Omschrijving" name="beschrijving"></textarea>
+    </fieldset>
+    <fieldset>
+        <label for="NaamInput">Naam:</label><br />
+        <input id="NaamInput" type="text" /><br/><br/>
+
+        <label for="telefoonnummerInput">Telefoonnummer:</label><br />
+        <input type="tel" id="telefoonnummerInput" name="telefoonnummer"/>
+    </fieldset>
+    <input type="submit" value="Verzenden" />
+</form>
+
